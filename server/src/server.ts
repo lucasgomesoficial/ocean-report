@@ -1,61 +1,34 @@
 import cors from "@fastify/cors";
-import { PrismaClient } from "@prisma/client";
+import fastifySwagger from "@fastify/swagger";
+import fastifySwaggerUI from "@fastify/swagger-ui";
 import fastify from "fastify";
-import { z } from "zod";
-import { VALUES_UF } from "./utils/valuesUf";
+import { getReports, saveReport } from "./routes/reports";
 
-const app = fastify();
+const app = fastify({ logger: true });
 
 app.register(cors, {
   origin: "*",
 });
 
-const prisma = new PrismaClient();
-
-app.get("/reports", async () => {
-  const reports = await prisma.uf.findMany();
-
-  return { reports };
+app.register(fastifySwagger, {
+  swagger: {
+    consumes: ["application/json"],
+    produces: ["application/json"],
+    info: {
+      title: "Ocean Watch",
+      description:
+        "API specifications for the Ocean Watch application backend.",
+      version: "1.0.0",
+    },
+  },
 });
 
-app.post("/send/reports", async (req, reply) => {
-  try {
-    const createReportSchema = z.object({
-      name: z.enum(VALUES_UF),
-    });
-
-    const { name } = createReportSchema.parse(req.body);
-
-    const hasRegister = await prisma.uf.findMany({
-      where: { name },
-    });
-
-    if (hasRegister.length) {
-      await prisma.uf.update({
-        where: { id: hasRegister[0].id },
-        data: { reports: hasRegister[0].reports + 1 },
-      });
-
-      return reply.status(204).send("Update reports successfully");
-    } else {
-      await prisma.uf.create({
-        data: {
-          name,
-          reports: 1,
-        },
-      });
-
-      return reply.status(204).send("Created reports successfully");
-    }
-  } catch (error) {
-    const errorJson = JSON.stringify(error);
-    if (error instanceof z.ZodError) {
-      return reply.status(400).send({ error: "Invalid name value" });
-    } else {
-      return reply.status(500).send(errorJson);
-    }
-  }
+app.register(fastifySwaggerUI, {
+  routePrefix: "/docs",
 });
+
+app.register(getReports);
+app.register(saveReport);
 
 app.listen({ port: 3333, host: "0.0.0.0" }, (err, address) => {
   if (err) {
