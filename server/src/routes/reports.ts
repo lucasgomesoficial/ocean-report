@@ -46,7 +46,7 @@ export async function saveReport(app: FastifyInstance) {
         description: "endpoint responsible for save report rates by state",
         tags: ["reports"],
         params: {
-          name: { type: "string" },
+          name: { type: "string", enum: VALUES_UF },
         },
         response: {
           204: { type: "string" },
