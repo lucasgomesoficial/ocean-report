@@ -30,11 +30,14 @@ app.register(fastifySwaggerUI, {
 app.register(getReports);
 app.register(saveReport);
 
-app.listen({ port: 3333, host: "0.0.0.0" }, (err, address) => {
-  if (err) {
-    console.error(err);
-    process.exit(1);
-  }
+app.listen(
+  { port: Number(process.env.PORT) || 3333, host: "0.0.0.0" },
+  (err, address) => {
+    if (err) {
+      console.error(err);
+      process.exit(1);
+    }
 
-  console.log(`Server listening at ${address}`);
-});
+    console.log(`Server listening at ${address}`);
+  }
+);
