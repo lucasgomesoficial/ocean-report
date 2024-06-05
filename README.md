@@ -177,7 +177,7 @@ $ npm run dev
 
 ## :memo: Autores
 
-Made with :heart: by
+Feito com :heart: por &#xa0;
 <a href="https://github.com/lucasgomesoficial" target="_blank">Lucas Gomes</a> &#xa0; | &#xa0;
 <a href="https://github.com/juliamiliano1" target="_blank">Julia de Souza Miliano</a> &#xa0; | &#xa0;
 <a href="https://github.com/gabelvs" target="_blank">Gabriela Alves</a> &#xa0; | &#xa0;
