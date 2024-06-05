@@ -35,7 +35,7 @@
 
 <p align="center">
   <a href="#dart-about">Sobre</a> &#xa0; | &#xa0;
-  <a href="#sparkles-technologies">Justificativas</a> &#xa0; | &#xa0;
+  <a href="#sparkles-justificativa-do-projeto">Justificativas</a> &#xa0; | &#xa0;
   <a href="#rocket-technologies">Tecnologias</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-requirements">Requerimentos</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
