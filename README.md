@@ -178,10 +178,10 @@ $ npm run dev
 ## :memo: Autores
 
 Made with :heart: by
-<a href="https://github.com/lucasgomesoficial" target="_blank">Lucas Gomes</a>
-<a href="https://github.com/lucasgomesoficial" target="_blank">Lucas Gomes</a>
-<a href="https://github.com/lucasgomesoficial" target="_blank">Lucas Gomes</a>
-<a href="https://github.com/lucasgomesoficial" target="_blank">Lucas Gomes</a>
+<a href="https://github.com/lucasgomesoficial" target="_blank">Lucas Gomes</a> &#xa0; | &#xa0;
+<a href="https://github.com/lucasgomesoficial" target="_blank">Lucas Gomes</a> &#xa0; | &#xa0;
+<a href="https://github.com/lucasgomesoficial" target="_blank">Lucas Gomes</a> &#xa0; | &#xa0;
+<a href="https://github.com/lucasgomesoficial" target="_blank">Lucas Gomes</a> &#xa0; | &#xa0;
 <a href="https://github.com/lucasgomesoficial" target="_blank">Lucas Gomes</a>
 
 &#xa0;
