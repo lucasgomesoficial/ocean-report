@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Ocean report" />
+  <img src=".github/ocean-report.png" alt="Ocean report" />
 
 &#xa0;
 
@@ -37,7 +37,7 @@
   <a href="#dart-explicação-do-projeto">Sobre</a> &#xa0; | &#xa0;
   <a href="#sparkles-justificativa-do-projeto">Justificativas</a> &#xa0; | &#xa0;
   <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
-  <a href="#arrow_up-deploy">links do Deploy</a> &#xa0; | &#xa0;
+  <a href="#arrow_up-deploy">Links do Deploy</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-requerimentos">Requerimentos</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#memo-autores">Autores</a>
@@ -81,7 +81,7 @@ Envolver a comunidade é crucial para a preservação ambiental. Este projeto ca
 
 ### Conclusão
 
-Este projeto web capacita cidadãos para monitorar e relatar problemas nos oceanos, oferecendo educação ambiental e promovendo ações de conservação eficazes.
+Este projeto capacita cidadãos para monitorar e relatar problemas nos oceanos, oferecendo educação ambiental e promovendo ações de conservação eficazes.
 
 ## :rocket: Tecnologias
 
