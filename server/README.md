@@ -13,7 +13,7 @@ A ferramenta permite o cadastro de um relato e a visualização da quantidade de
 
 ## Documentação da API (Swagger)
 
-Para documentação da API, acesse o link: [https://ocean-watch-production.up.railway.app](https://ocean-watch-production.up.railway.app)
+Para documentação da API, acesse o link: [https://ocean-report-production.up.railway.app](https://ocean-report-production.up.railway.app)
 
 ## Banco de dados
 
