@@ -35,6 +35,7 @@
 
 <p align="center">
   <a href="#dart-about">Sobre</a> &#xa0; | &#xa0;
+  <a href="#sparkles-technologies">Justificativas</a> &#xa0; | &#xa0;
   <a href="#rocket-technologies">Tecnologias</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-requirements">Requerimentos</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
@@ -46,7 +47,7 @@
 
 ## :dart: About
 
-## Explicação do projeto.
+## Explicação do projeto
 
 ### Recursos Principais do App
 
@@ -64,9 +65,7 @@
 
 - _Índice de relatos por estado:_ Artigos, vídeos e infográficos sobre ecossistemas marinhos, a importância da conservação dos corais e boas práticas ambientais.
 
-## :sparkles: Features
-
-## Justificativa do projeto.
+## :sparkles: Justificativa do projeto
 
 ### Importância dos Oceanos
 
