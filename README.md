@@ -179,10 +179,10 @@ $ npm run dev
 
 Made with :heart: by
 <a href="https://github.com/lucasgomesoficial" target="_blank">Lucas Gomes</a> &#xa0; | &#xa0;
-<a href="https://github.com/lucasgomesoficial" target="_blank">Lucas Gomes</a> &#xa0; | &#xa0;
-<a href="https://github.com/lucasgomesoficial" target="_blank">Lucas Gomes</a> &#xa0; | &#xa0;
-<a href="https://github.com/lucasgomesoficial" target="_blank">Lucas Gomes</a> &#xa0; | &#xa0;
-<a href="https://github.com/lucasgomesoficial" target="_blank">Lucas Gomes</a>
+<a href="https://github.com/juliamiliano1" target="_blank">Julia de Souza Miliano</a> &#xa0; | &#xa0;
+<a href="https://github.com/gabelvs" target="_blank">Gabriela Alves</a> &#xa0; | &#xa0;
+<a href="https://github.com/flavianecandido" target="_blank">Flaviane Alves Cândido</a> &#xa0; | &#xa0;
+<a href="https://github.com/fvdsilva" target="_blank">Fernanda Viana</a>
 
 &#xa0;
 
