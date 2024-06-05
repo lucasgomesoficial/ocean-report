@@ -23,9 +23,9 @@ app.register(fastifySwagger, {
     consumes: ["application/json"],
     produces: ["application/json"],
     info: {
-      title: "Ocean Watch",
+      title: "Ocean report Api",
       description:
-        "API specifications for the Ocean Watch application backend.",
+        "API specifications for the Ocean report Api application backend.",
       version: "1.0.0",
     },
   },
