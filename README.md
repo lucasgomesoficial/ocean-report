@@ -34,20 +34,18 @@
 <hr> -->
 
 <p align="center">
-  <a href="#dart-about">Sobre</a> &#xa0; | &#xa0;
+  <a href="#dart-explicação-do-projeto">Sobre</a> &#xa0; | &#xa0;
   <a href="#sparkles-justificativa-do-projeto">Justificativas</a> &#xa0; | &#xa0;
-  <a href="#rocket-technologies">Tecnologias</a> &#xa0; | &#xa0;
-  <a href="#white_check_mark-requirements">Requerimentos</a> &#xa0; | &#xa0;
+  <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
+  <a href="#arrow_up-deploy">links do Deploy</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requerimentos">Requerimentos</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
-  <a href="#memo-license">Licenças</a> &#xa0; | &#xa0;
-  <a href="https://github.com/lucasgomesoficial" target="_blank">Autores</a>
+  <a href="#memo-autores">Autores</a>
 </p>
 
 <br>
 
-## :dart: About
-
-## Explicação do projeto
+## :dart: Explicação do projeto
 
 ### Recursos Principais do App
 
@@ -63,7 +61,7 @@
 
 #### 3. _Recursos Informativos_
 
-- _Índice de relatos por estado:_ Artigos, vídeos e infográficos sobre ecossistemas marinhos, a importância da conservação dos corais e boas práticas ambientais.
+- _Índice de relatos por estado:_ Visualização da quantidade de relatos por estado.
 
 ## :sparkles: Justificativa do projeto
 
@@ -85,54 +83,106 @@ Envolver a comunidade é crucial para a preservação ambiental. Este projeto ca
 
 Este projeto web capacita cidadãos para monitorar e relatar problemas nos oceanos, oferecendo educação ambiental e promovendo ações de conservação eficazes.
 
-## :rocket: Technologies
+## :rocket: Tecnologias
 
-## Apontamento de tecnologias utilizadas.
+### As seguintes ferramentas foram usadas neste projeto:
 
-The following tools were used in this project:
+#### Web
 
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
+- [React](https://react.dev/)
+- [ViteJs](https://vitejs.dev/)
+- [React Leaflet](https://react-leaflet.js.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Shadcn/ui](https://ui.shadcn.com/)
+- [React Router](https://reactrouter.com/en/main)
+- [Lucide React](https://lucide.dev/)
+- [Axios](https://axios-http.com/ptbr/)
+
+#### Mobile
+
+- [React](https://react.dev/)
 - [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [Expo](https://expo.dev/)
+- [Axios](https://axios-http.com/ptbr/)
+
+#### Backend
+
+- [Node](https://nodejs.org/en)
+- [Fastify](https://fastify.dev/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Prisma](https://www.prisma.io/)
+- [Zod](https://zod.dev/)
 
 ## APIs utilizadas e suas funções.
 
 Para documentação da API, acesse o link: [ocean-report-api](https://ocean-report-production.up.railway.app/docs)
 
-## Link do deploy (back e front) em funcionamento.
+## :arrow_up: Deploy
+
+### Links do deploy (back e front) em funcionamento.
 
 Front-end: [web](https://ocean-report.vercel.app/)
+Front-end: [mobile](https://snack.expo.dev/@fernandavianasilva/f5189b)
 Back-end: [api](https://ocean-report-production.up.railway.app)
 
-## :white_check_mark: Requirements
+## :white_check_mark: Requerimentos
 
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+Antes de starting :checkered_flag:, você precisa ter [Git](https://git-scm.com) e [Node](https://nodejs.org/en/) instalados.
 
 ## :checkered_flag: Starting
+
+### Mobile
+
+Somente pelo snack
+
+### Web
 
 ```bash
 # Clone this project
 $ git clone https://github.com/lucasgomesoficial/ocean-report
 
 # Access
-$ cd ocean-report
+$ cd ocean-report/web
 
 # Install dependencies
-$ yarn
+$ npm i
 
 # Run the project
-$ yarn start
+$ npm run dev
 
 # The server will initialize in the <http://localhost:3000>
 ```
 
-## :memo: License
+### Backend
 
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+```bash
+# Clone this project
+$ git clone https://github.com/lucasgomesoficial/ocean-report
 
-Made with :heart: by <a href="https://github.com/lucasgomesoficial" target="_blank">{{YOUR_NAME}}</a>
+# Access
+$ cd ocean-report/server
+
+# Install dependencies
+$ npm i
+
+# Check Environment Variables
+# Next starting your migrations
+$ npx prisma migrate
+
+# Run the project
+$ npm run dev
+
+# The server will initialize in the <http://localhost:3333>
+```
+
+## :memo: Autores
+
+Made with :heart: by
+<a href="https://github.com/lucasgomesoficial" target="_blank">Lucas Gomes</a>
+<a href="https://github.com/lucasgomesoficial" target="_blank">Lucas Gomes</a>
+<a href="https://github.com/lucasgomesoficial" target="_blank">Lucas Gomes</a>
+<a href="https://github.com/lucasgomesoficial" target="_blank">Lucas Gomes</a>
+<a href="https://github.com/lucasgomesoficial" target="_blank">Lucas Gomes</a>
 
 &#xa0;
 
