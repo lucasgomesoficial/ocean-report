@@ -27,7 +27,7 @@ export function DrawerDemo() {
             <DrawerContent>
                     <div className="mx-auto w-full max-w-2xl">
                         <DrawerHeader>
-                            <DrawerTitle className="text-center">Índices de Relatos por Cidade</DrawerTitle>
+                            <DrawerTitle className="text-center">Índices de Relatos por Estado</DrawerTitle>
                         </DrawerHeader>
                         <div className="p-4 pb-0">
                             <div className="flex items-center justify-center space-x-2">
