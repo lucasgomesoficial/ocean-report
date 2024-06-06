@@ -13,7 +13,7 @@ export function Content() {
     <>
       <div className=" flex py-10 justify-center">
         <h2 className="text-neutral-500 text-2xl font-semi-bold">
-          Com a OceanWatch, sua contribuição para um oceano melhor
+          Com a OceanReport, sua contribuição para um oceano melhor
         </h2>
       </div>
       <div className=" px-96 justify-center gap-40">
