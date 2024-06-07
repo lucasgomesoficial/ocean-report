@@ -33,7 +33,7 @@ export function Access() {
   async function handleSubmit(event) {
     event.preventDefault();
 
-    const data = await loadOptions(event.target[0].defaultValue);
+    const data = await loadOptions(event.target[1].value);
 
     setPosition(data.center);
     setState(data.context[0].text);
