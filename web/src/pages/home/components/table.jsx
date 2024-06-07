@@ -1,48 +1,29 @@
-import axios from 'axios'
 import {
-    Table,
-    TableBody,
-    TableCell,
-    TableHead,
-    TableHeader,
-    TableRow,
-} from "../../../components/ui/table"
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "../../../components/ui/table";
 
-const res = [
-    {
-        date: "01/06/2024",
-        cidade: "São Paulo",
-        reports: "4",
-    },
-    {
-        date: "02/06/2024",
-        cidade: "Porto Seguro",
-        reports: "7",
-    },
-    {
-        date: "03/06/2024",
-        cidade: "Ilhabela",
-        reports: "10",
-    },
-]
-
-export function TableList() {
-    return (
-        <Table className="w-[60%] ml-28">
-            <TableHeader>
-                <TableRow>
-                    <TableHead className="text-center">ESTADO</TableHead>
-                    <TableHead className="text-center">REPORTS</TableHead>
-                </TableRow>
-            </TableHeader>
-            <TableBody>
-                {res.map((date) => (
-                    <TableRow key={date.date}>
-                        <TableCell className="text-center">{date.cidade}</TableCell>
-                        <TableCell className="text-center">{date.reports}</TableCell>
-                    </TableRow>
-                ))}
-            </TableBody>
-        </Table>
-    )
+export function TableList({ reports }) {
+  return (
+    <Table className="w-[60%] ml-28">
+      <TableHeader>
+        <TableRow>
+          <TableHead>ESTADO</TableHead>
+          <TableHead className="text-center">RELATO(S)</TableHead>
+        </TableRow>
+      </TableHeader>
+      <TableBody>
+        {reports.map(({ id, name, reports }) => (
+          <TableRow key={id}>
+            <TableCell>{name}</TableCell>
+            <TableCell className="text-center">{reports}</TableCell>
+          </TableRow>
+        ))}
+      </TableBody>
+    </Table>
+  );
 }
