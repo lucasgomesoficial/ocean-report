@@ -20,7 +20,6 @@ export function Access() {
   const { getLocal } = useFetchMapbox();
 
   const loadOptions = async (inputValue) => {
-    if (inputValue.length < 5) return;
     const response = await getLocal(inputValue);
 
     return response;
@@ -34,7 +33,6 @@ export function Access() {
   async function handleSubmit(event) {
     event.preventDefault();
 
-    if (!address) return;
     const data = await loadOptions(event.target[0].defaultValue);
 
     setPosition(data.center);
