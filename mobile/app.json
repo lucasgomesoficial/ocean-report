@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "ocean-report-mobile",
-    "slug": "snack-a1f18f64-0884-458c-89c1-7c2e274c9ece",
+    "slug": "snack-b236f991-896b-4b96-9bae-785333553c67",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,9 +11,6 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
     "ios": {
       "supportsTablet": true
     },

@@ -1,86 +1,63 @@
-import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import api from '../Services/api';
+import React from 'react';
+import { Text, View, Image, TouchableOpacity, StyleSheet } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const Home = () => {
-  const [dados, setDados] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchDados = async () => {
-      try {
-        setLoading(true);
-        const response = await api.get('/reports');
-        console.log('Resposta da API:', response.data);
-        setDados(response.data.reports || []);
-      } catch (error) {
-        console.error('Erro ao buscar dados:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchDados();
-  }, []);
+  const navigation = useNavigation();
+  
+  const irReports = () => {
+    navigation.navigate('Reports');
+  }
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Indice de relatos por estado</Text>
-      
-      {loading ? (
-        <Text style={styles.loading}>Carregando...</Text>
-      ) : dados.length > 0 ? (
-        dados.map(item => (
-          <View key={item.id} style={styles.item}>
-            <Text style={styles.name}>{item.name}</Text>
-            <Text style={styles.reports}>Relatórios: {item.reports}</Text>
-            <Text style={styles.createdAt}>Criado em: {new Date(item.createdAt).toLocaleDateString()}</Text>
-          </View>
-        ))
-      ) : (
-        <Text style={styles.noResult}>Não há resultados disponíveis.</Text>
-      )}
+      <View style={styles.imageContainer}>
+        <Image
+          style={styles.image}
+          source={require('../assets/Logo-tela-principal.png')}
+        />
+        <Text style={styles.title}>Com a OceanReport, sua contribuição para um oceano melhor</Text>
+        <TouchableOpacity style={styles.button} onPress={irReports}>
+          <Text style={styles.textoBotao}>Indices de relatos</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: 'white',
     flex: 1,
-    backgroundColor: '#fff',
-    padding: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: 20,
+  },
+  imageContainer: {
+    alignItems: 'center',
+    marginBottom: 99,
+  },
+  image: {
+    width: 300,
+    height: 400,
   },
   title: {
+    fontSize: 16,
+    marginVertical: 8,
+    textAlign: 'center',
+  },
+  button: {
+    borderRadius: 30,
+    backgroundColor: 'rgba(18, 82, 166, 1)',
+    width: 297,
+    marginTop: 53,
+    padding: 15,
+    height: 62,
+  },
+  textoBotao: {
+    color: 'white',
+    textAlign: 'center',
     fontSize: 20,
-    fontWeight: 'bold',
-    marginBottom: 20,
-    textAlign: 'center',
-  },
-  item: {
-    marginBottom: 10,
-    backgroundColor: '#f9f9f9',
-    padding: 10,
-    borderRadius: 5,
-  },
-  name: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    marginBottom: 5,
-  },
-  reports: {
-    fontSize: 16,
-  },
-  createdAt: {
-    fontSize: 14,
-    color: '#888',
-  },
-  noResult: {
-    fontSize: 16,
-    color: '#888',
-  },
-  loading: {
-    fontSize: 16,
-    textAlign: 'center',
   },
 });
 
